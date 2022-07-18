@@ -1,0 +1,29 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body, ul{
+	padding:50px;
+}
+
+fieldset{
+  background-color:#9999ff99;
+  border:0px;
+}
+
+fieldset fieldset{
+  padding:5px;
+  text-align:left;
+  background-color:#ffffff99;
+}
+
+p{
+  font-size:24px;
+  padding:16px;
+  background-color:#9999ff99;
+}
+
+li{
+  font-size:24px;
+}
