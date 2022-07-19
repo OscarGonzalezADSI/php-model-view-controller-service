@@ -19,12 +19,12 @@ class Person_Model extends Person implements Person_Model_Interface
   
   public function update()
   {
-	$index = $this->getIndexById($this->getId());
-	if($index != -1)
-	{
+    $index = $this->getIndexById($this->getId());
+    if($index != -1)
+    {
       $this->persons[$index]->nombre = $this->getNombre();
       $this->persons[$index]->apellido = $this->getApellido();
-	}
+    }
   }
 
   public function deleteP(): Bool
