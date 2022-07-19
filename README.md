@@ -11,5 +11,5 @@ Tenga en cuenta que para diseñar frontend compatible con el backend, diseñado 
 está presente en TestApp View_person.php.
 
 Lo importante es conocer la estructura Json que se debe generar, lo descubrirá al ejecutar el 
-método mainPerson() de la clase View_person, con ello basta y sobra para diseñar toda la usabilidad
-basica del componente.
+método mainPerson() de la clase View_person; con ello podrá diseñar toda la usabilidad
+básica del componente.
