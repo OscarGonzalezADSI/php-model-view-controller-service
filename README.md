@@ -6,3 +6,8 @@ La idea es reutilizar código de una forma eficiente.
 
 La tarea pendiente es diseñar un frontend, acorde a la arquitectura exigida por el
 backend que está diseñado hasta el momento.
+
+Tenga en cuenta que el diseño de la app de frontend para el backend que esta hasta este punto
+esta presente en TestApp View_person.php. Lo importante es conocer la estructura Json que genera
+al ejecutar el metodo mainPerson() y con ello basta y sobra para tener idea para diseñar la usabilidad
+del componente.
