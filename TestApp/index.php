@@ -50,7 +50,7 @@ document.getElementById("apellido").value = apellido;
 	  <li>Implementación de clases.</li>
 	  <li>Implementación de herencias.</li>
 	  <li>Implementación de interfaces.</li>
-	  <li>Creación de una estructura de datos propia basada en el fromato Json</li>
+	  <li>Creación de una estructura de datos propia basada en el formato Json</li>
 	</ul>
 	</br></br>
 	<form>
