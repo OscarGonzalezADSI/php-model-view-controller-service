@@ -4,44 +4,48 @@ class Person_Controller implements Person_Controller_Interface
 {
   public function mainPerson()
   {
-      $this->model = new Person_Model();
-      $this->model->mainPerson();
+      $this->model_mysql = new Person_Model();
+      $this->model_mysql = new Person_Model_Mysql();
+      $this->model_mysql->mainPerson();
   }
   
   public function dataModel(int $id=0, String $nombre ="", String $apellido = ""): Void
   {
-      $this->model->setId($id);
-      $this->model->setNombre($nombre);
-      $this->model->setApellido($apellido);
+      $this->model_mysql->setId($id);
+      $this->model_mysql->setNombre($nombre);
+      $this->model_mysql->setApellido($apellido);
   }
   
   public function insert()
   {
-    $this->model->insert();
+    $this->model_mysql->insert();
+	$this->model_mysql->insertPrepared();
   }
   
   public function update()
   {
-    $this->model->update();
+    $this->model_mysql->update();
+	$this->model_mysql->updatePrepared();
   }
   
   public function deleteP(): Bool
   {
-    $this->model->deleteP();
+    $this->model_mysql->deleteP();
+	$this->model_mysql->deletePrepared();
     return True;
   }
   
   public function countPersons(): Int
   {
-      return $this->model->countPersons();
+      return $this->model_mysql->countPersons();
   }
 
   public function selectP(): String
   {
-    return $this->model->selectP();
+    return $this->model_mysql->selectP();
   }
   public function selectPersonById($id): String
   {
-    return $this->model->selectPersonById($id);
+    return $this->model_mysql->selectPersonById($id);
   }
 }

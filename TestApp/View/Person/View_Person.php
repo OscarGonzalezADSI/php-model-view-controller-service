@@ -59,7 +59,7 @@ Class Person_Data
   {
     $personas = [];
 
-    $id = 24;
+    $id = 3;
     $nombre = "jose";
     $apellido = "gutierrez";
     $persona = new Person($id, $nombre, $apellido);

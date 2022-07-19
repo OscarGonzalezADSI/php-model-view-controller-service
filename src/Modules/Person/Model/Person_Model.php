@@ -5,6 +5,8 @@ class Person_Model extends Person implements Person_Model_Interface
   public function mainPerson()
   {
       $this->persons = [];
+	  include_once "../src/Modules/Person/Model/conexion.php";
+	  $this->conexion = new Conexion();	
   }
   
   public function insert()

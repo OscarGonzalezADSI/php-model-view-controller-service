@@ -12,7 +12,6 @@
 include_once "./View/Person/View_Person.php";
 include_once "../src/Service/Person/Service_Person.php";
 
-
 $viewPerson = new Person_Data();
 $order = $viewPerson->mainPerson();
 $person_Service = new Service_Persona($order);
@@ -51,8 +50,7 @@ document.getElementById("apellido").value = apellido;
 	  <li>Implementación de clases.</li>
 	  <li>Implementación de herencias.</li>
 	  <li>Implementación de interfaces.</li>
-	  <li>Creación de una estructura de datos propia basada en el formato Json.</li>
-	  <li>Integración exitosa con base de datos insertar, modificar y eliminar registros.</li>
+	  <li>Creación de una estructura de datos propia basada en el formato Json</li>
 	</ul>
 	</br></br>
 	<form>
@@ -79,8 +77,6 @@ document.getElementById("apellido").value = apellido;
 	echo '<hr>';
 	echo 'buscar registro por id= 2:</br><hr>';
 	echo $person_Service->selectPersonById(1);
-
-?>
-
+	?>
 </body>
 </html>

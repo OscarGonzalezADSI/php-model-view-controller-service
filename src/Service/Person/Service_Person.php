@@ -23,16 +23,18 @@ class Service_Persona implements Person_Service_Interface
   function insert()
   {
     $order = $this->order;
-    $cant = count((array) $order['insert']);
+    $cant = count((array) $order['insert']);	
+	
     for($i=0; $cant > $i; $i++)
     {
-      $id = $order['insert'][$i]->id;
-      $nombre = $order['insert'][$i]->nombre;
-      $apellido = $order['insert'][$i]->apellido;
-      $this->controller->dataModel($id, $nombre, $apellido);
+      $id_person = $order['insert'][$i]->id;
+      $name = $order['insert'][$i]->nombre;
+      $lastname = $order['insert'][$i]->apellido;
+      $this->controller->dataModel($id_person, $name, $lastname);
       $this->controller->insert();
     }
   }
+  
   function update()
   {
     $order = $this->order;
